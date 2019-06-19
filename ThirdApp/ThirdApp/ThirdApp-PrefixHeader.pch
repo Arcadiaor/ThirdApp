@@ -1,0 +1,38 @@
+//
+//  SecondApp-PrefixHeader.pch
+//  ThirdApp
+//
+//  Created by leiyong on 2019/6/19.
+//  Copyright © 2019 Arcadia. All rights reserved.
+//
+
+#ifndef SecondApp_PrefixHeader_h
+#define SecondApp_PrefixHeader_h
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import "UIColor+Hex.h"
+#import "UIView+Addition.h"
+#import "UILabel+Unit.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "NSString+LYCalculation.h"
+#import "MJRefreshNormalHeader.h"
+#import "MJRefreshAutoNormalFooter.h"
+#import <Realm/Realm.h>
+
+#define Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define Is_iPhone_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define Is_iPhone_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define LYSCREENHEIGHT                       [[UIScreen mainScreen] bounds].size.height
+#define LYSCREENWIDTH                        [[UIScreen mainScreen] bounds].size.width
+
+#define LYNAVIGATION_BAR_HEIGHT              (44 + [[UIApplication sharedApplication] statusBarFrame].size.height)
+
+
+#endif /* SecondApp_PrefixHeader_h */
